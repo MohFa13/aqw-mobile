@@ -8,6 +8,8 @@ package {
 		public static const API_VERSION_URL:String = GAME_BASE_URL + "api/data/gameversion";
 		public static const API_LOGIN_URL:String = GAME_BASE_URL + "api/login/now";
 
+		public static const GLOBAL_CHAT_URL:String = "ws://localhost:3000";
+
 		public static const APP_VERSION:String = getVersion();
 
 		private static function getVersion():String {
@@ -35,6 +37,7 @@ package {
 
 		public var option_language:String = "en";
 		public var option_skill_tooltips:Boolean = true;
+		public var option_global_chat:Boolean = true;
 		public var option_disable_cutscenes:Boolean = false;
 		public var option_slow_walk:Boolean = false;
 		
