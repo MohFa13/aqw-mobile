@@ -34,6 +34,9 @@ package {
 		public var option_animation_weapon_off:Boolean = false;
 
 		public var option_filter_off:Boolean = false;
+		public var option_rasterize:Boolean = true;
+		public var option_rasterize_scale:Number = 1.5;
+		public var option_rasterize_max_side:int = 2048;
 
 		public var option_language:String = "en";
 		public var option_skill_tooltips:Boolean = true;
