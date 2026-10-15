@@ -156,8 +156,9 @@ jobs:
                         icons/icon-96x96.png \
                         icons/icon-144x144.png \
                         icons/icon-192x192.png \
-                        gamefiles/game.swf
-            
+                        gamefiles/game.swf \
+                        gamefiles/world-map.swf
+
             -   name: Upload
                 uses: actions/upload-artifact@v7
                 with:
@@ -221,7 +222,8 @@ jobs:
                         icons/icon-128x128.png `
                         icons/icon-144x144.png `
                         icons/icon-192x192.png `
-                        gamefiles/game.swf
+                        gamefiles/game.swf `
+                        gamefiles/world-map.swf
 
             -   name: Zip
                 run: Compress-Archive -Path "AQWPocket-${{ needs.patch.outputs.VERSION }}${{ matrix.suffix }}" -DestinationPath "AQWPocket-${{ needs.patch.outputs.VERSION }}${{ matrix.suffix }}.zip"
@@ -282,7 +284,8 @@ jobs:
                         icons/icon-128x128.png \
                         icons/icon-144x144.png \
                         icons/icon-192x192.png \
-                        gamefiles/game.swf
+                        gamefiles/game.swf \
+                        gamefiles/world-map.swf
 
             -   name: Zip
                 run: zip -r AQWPocket-${{ needs.patch.outputs.VERSION }}${{ matrix.suffix }}.zip AQWPocket-${{ needs.patch.outputs.VERSION }}${{ matrix.suffix }}/
